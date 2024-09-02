@@ -1,7 +1,7 @@
 
 # #* O render serve para podermos renderizar templates como html na pagina
 from django.shortcuts import render
-from django.http import HttpResponse
+# from django.http import HttpResponse
 
 
 # #*HTTP request(Um pedido para o servidor)
@@ -13,11 +13,3 @@ def my_view(req):
     return render(req, 'recipes/home.html', context={
         'name': 'Welliton'
     })
-
-
-def sobre(req):
-    return HttpResponse('Pagina sobre')
-
-
-def contatos(req):
-    return HttpResponse('Pagina contatos')
